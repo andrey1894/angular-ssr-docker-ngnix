@@ -1,0 +1,11 @@
+.form-control-label {
+  margin-bottom: 0.5rem;
+  color: var(--angular-app-gray-color);
+  font-size: var(--font-size-11);
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.form-label {
+  display: flex;
+}

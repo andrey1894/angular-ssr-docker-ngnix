@@ -1,0 +1,31 @@
+
+.accordion-button {
+  &:after {
+    content: '';
+    flex-shrink: 0;
+    margin-left: auto;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+
+    background-image: url('/assets/images/plus.png');
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+
+    transition: var(--bs-accordion-btn-icon-transition);
+  }
+
+  &:not(.collapsed) {
+    color: var(--angular-app-primary-color);
+    background-color: var(--angular-app-primary-color-highlight);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--angular-app-primary-color);
+
+    &:after {
+      background-image: url('/assets/images/minus.png');
+    }
+  }
+
+  &:focus {
+    border-color: var(--angular-app-primary-color);
+    box-shadow: var(--angular-app-primary-color-highlight);
+  }
+}

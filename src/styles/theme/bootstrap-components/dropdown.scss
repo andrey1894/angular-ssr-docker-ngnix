@@ -1,0 +1,35 @@
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--angular-app-gray-200-color);
+}
+
+.dropdown-item {
+  font-weight: bold;
+
+  &:hover {
+    font-size: var(--font-size-16);
+    color: var(--angular-app-primary-color);
+  }
+
+  &.active,
+  &:active {
+    border-radius: 10px;
+    color: var(--angular-app-primary-color);
+    background-color: var(--angular-app-primary-color-highlight);
+  }
+}
+
+
+#typeahead-focus + ngb-typeahead-window {
+  max-width: 100%;
+  inset: 0 !important;
+  overflow: auto;
+  top: 100%;
+
+  & > button {
+    white-space: normal;
+  }
+}
+
+.iti {
+  width: 100%;
+}

@@ -1,0 +1,51 @@
+:root {
+  --bs-primary: var(--angular-app-primary-color);
+  --bs-primary-rgb: var(--angular-app-primary-color-rgb);
+  --bs-success: var(--angular-app-success-color);
+  --bs-success-rgb: var(--angular-app-success-color-rgb);
+  --bs-warning: var(--angular-app-warning-color);
+  --bs-warning-rgb: var(--angular-app-warning-color-rgb);
+  --bs-danger: var(--angular-app-danger-color);
+  --bs-danger-rgb: var(--angular-app-danger-color-rgb);
+
+  --bs-link-color-rgb: var(--angular-app-link-color-rgb);
+  --bs-link-hover-color-rgb: var(--angular-app-link-hover-color-rgb);
+
+  --bs-link-color: var(--angular-app-link-color);
+  --bs-link-hover-color: var(--angular-app-link-hover-color);
+
+  --bs-body-bg: var(--angular-app-bg-color);
+
+  --bs-primary-bg-subtle: var(--angular-app-primary-color-highlight);
+  --bs-success-bg-subtle: var(--angular-app-success-color-highlight);
+  --bs-warning-bg-subtle: var(--angular-app-warning-color-highlight);
+  --bs-danger-bg-subtle: var(--angular-app-danger-color-highlight);
+
+  --bs-highlight-bg: var(--angular-app-primary-color-highlight);
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(var(--angular-app-primary-color-rgb), 0.25);
+
+  --sb-track-color: var(--angular-app-gray-200-color);
+  --sb-thumb-color: var(--angular-app-primary-color);
+  --sb-size: 7px;
+
+  --bs-focus-ring-color: rgba(var(--angular-app-primary-color-rgb), 0.25);
+  --bs-form-valid-border-color: var(--angular-app-success-color);
+  --bs-form-valid-color: var(--angular-app-success-color);
+  --bs-form-invalid-border-color: var(--angular-app-danger-color);
+  --bs-form-invalid-color: var(--angular-app-danger-color);
+
+  --bs-black: var(--angular-app-black-color);
+  --bs-white: var(--angular-app-white-color);
+  --bs-gray-100: var(--angular-app-gray-100-color);
+  --bs-gray-200: var(--angular-app-gray-200-color);
+  --bs-gray-300: var(--angular-app-gray-300-color);
+  --bs-gray-400: var(--angular-app-gray-400-color);
+  --bs-gray-500: var(--angular-app-gray-500-color);
+  --bs-gray-600: var(--angular-app-gray-600-color);
+  --bs-gray-700: var(--angular-app-gray-700-color);
+  --bs-gray-800: var(--angular-app-gray-800-color);
+  --bs-gray-900: var(--angular-app-gray-900-color);
+
+  --bs-border-radius: var(--angular-app-border-radius);
+  --bs-border-color: var(--angular-app-gray-300-color);
+}

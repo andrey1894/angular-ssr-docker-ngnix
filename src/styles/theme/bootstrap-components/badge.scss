@@ -1,0 +1,44 @@
+.badge-custom {
+  font-size: var(--font-size-14);
+  color: var(--angular-app-gray-color);
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--angular-app-gray-100-color);
+}
+
+.badge-custom-active {
+  color: var(--angular-app-success-color);
+  background-color: var(--angular-app-success-color-highlight);
+}
+
+.badge-custom-negative {
+  color: var(--angular-app-danger-color);
+  background-color: var(--angular-app-danger-color-highlight);
+}
+
+.badge-custom-default {
+  color: var(--angular-app-text-color);
+  background-color: var(--angular-app-gray-100-color);
+}
+
+// .badge {
+//     --bs-badge-padding-x: 0.65em;
+//     --bs-badge-padding-y: 0.35em;
+//     --bs-badge-font-size: calc(1.28125rem + 0.375vw);
+//     --bs-badge-font-weight: 900;
+//     --bs-badge-color: black;
+//     --bs-badge-border-radius: 20px;
+//     display: inline-block;
+//     padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+//     font-size: var(--bs-badge-font-size);
+//     font-weight: var(--bs-badge-font-weight);
+//     line-height: 1;
+//     color: var(--bs-badge-color);
+//     text-align: center;
+//     white-space: nowrap;
+//     vertical-align: baseline;
+//     border-radius: var(--bs-badge-border-radius);
+// }

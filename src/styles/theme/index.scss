@@ -1,0 +1,12 @@
+// Libraries
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// App theme
+@import 'root/index';
+@import 'bootstrap-components/index';
+@import 'components/index';
+@import 'icons/icons';
+
+// TODO: Remove public web
+@import 'public-web/index';

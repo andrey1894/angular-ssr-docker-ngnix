@@ -1,0 +1,54 @@
+:root {
+  --angular-app-primary-color: #e31e24;
+  --angular-app-primary-color-rgb: 227, 30, 36;
+  --angular-app-primary-color-highlight: rgba(var(--angular-app-primary-color-rgb), 0.1);
+
+  --angular-app-success-color: #60a828;
+  --angular-app-success-color-rgb: 96, 168, 40;
+  --angular-app-success-color-highlight: rgba(var(--angular-app-success-color-rgb), 0.1);
+
+  --angular-app-warning-color: #ff9c09;
+  --angular-app-warning-color-rgb: 255, 156, 9;
+  --angular-app-warning-color-highlight: rgba(var(--angular-app-warning-color-rgb), 0.1);
+
+  --angular-app-danger-color: #a82828;
+  --angular-app-danger-color-rgb: 168, 40, 40;
+  --angular-app-danger-color-highlight: rgba(var(--angular-app-danger-color-rgb), 0.1);
+
+  --angular-app-gray-100-color: #f6f6f6;
+  --angular-app-gray-200-color: #e6e6e6;
+  --angular-app-gray-300-color: #e8e8e8;
+  --angular-app-gray-400-color: #9c9c9c;
+
+  --angular-app-gray-500-color: #adb5bd; // Doesn't used at the moment. Only to rewrite a bootstrap theme
+  --angular-app-gray-600-color: #6c757d; // Doesn't used at the moment. Only to rewrite a bootstrap theme
+
+  --angular-app-gray-700-color: #495057;
+  --angular-app-gray-800-color: #343a40;
+
+  --angular-app-gray-900-color: #15171f;
+
+  --angular-app-active-shadow: 0 0 0 1000px rgb(0 0 0 / 0.2) inset;
+
+  --angular-app-black-color: #000;
+  --angular-app-white-color: #fff;
+  --angular-app-gray-color: var(--angular-app-gray-400-color);
+
+  --angular-app-link-color-rgb: var(--angular-app-primary-color-rgb);
+  --angular-app-link-hover-color-rgb: var(--angular-app-primary-color-rgb);
+  --angular-app-link-color: rgb(var(--angular-app-primary-color-rgb));
+  --angular-app-link-hover-color: rgb(var(--angular-app-primary-color-rgb));
+
+  --angular-app-border-color: var(--angular-app-gray-color);
+
+  --angular-app-text-color: var(--angular-app-gray-900-color);
+  --angular-app-text-reverse-color: var(--angular-app-white-color);
+
+  --angular-app-bg-color: var(--angular-app-white-color);
+  --angular-app-bg-reverse-color: var(--angular-app-gray-900-color);
+
+  --angular-app-blockquote-color: var(--angular-app-primary-color-highlight);
+
+  // Admin vars
+  --angular-app-admin-sidebar-bg-color: var(--angular-app-gray-100-color);
+}

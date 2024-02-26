@@ -1,0 +1,173 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.425rem 0.7375rem;
+  font-size: var(--font-size-14);
+  font-weight: 600;
+  border-radius: 10px;
+  column-gap: 0.3rem;
+
+  &.btn-primary {
+    --bs-btn-color: var(--angular-app-text-reverse-color);
+    --bs-btn-bg: var(--angular-app-primary-color);
+    --bs-btn-border-color: var(--angular-app-primary-color);
+    --bs-btn-hover-color: var(--angular-app-text-reverse-color);
+    --bs-btn-hover-bg: var(--angular-app-primary-color);
+    --bs-btn-hover-border-color: var(--angular-app-primary-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--angular-app-text-reverse-color);
+    --bs-btn-active-bg: var(--angular-app-primary-color);
+    --bs-btn-active-border-color: var(--angular-app-primary-color);
+    --bs-btn-active-shadow: var(--angular-app-active-shadow);
+    --bs-btn-disabled-color: var(--angular-app-text-reverse-color);
+    --bs-btn-disabled-bg: var(--angular-app-primary-color);
+    --bs-btn-disabled-border-color: var(--angular-app-primary-color);
+
+    border: none;
+
+    &:hover {
+      backdrop-filter: blur(5px);
+      box-shadow: var(--angular-app-active-shadow);
+    }
+  }
+
+  &.btn-success {
+    --bs-btn-color: var(--angular-app-text-reverse-color);
+    --bs-btn-bg: var(--angular-app-success-color);
+    --bs-btn-border-color: var(--angular-app-success-color);
+    --bs-btn-hover-color: var(--angular-app-text-reverse-color);
+    --bs-btn-hover-bg: var(--angular-app-success-color);
+    --bs-btn-hover-border-color: var(--angular-app-success-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--angular-app-text-reverse-color);
+    --bs-btn-active-bg: var(--angular-app-success-color);
+    --bs-btn-active-border-color: var(--angular-app-success-color);
+    --bs-btn-active-shadow: var(--angular-app-active-shadow);
+    --bs-btn-disabled-color: var(--angular-app-text-reverse-color);
+    --bs-btn-disabled-bg: var(--angular-app-success-color);
+    --bs-btn-disabled-border-color: var(--angular-app-success-color);
+
+    &:hover {
+      backdrop-filter: blur(5px);
+      box-shadow: var(--angular-app-active-shadow);
+    }
+  }
+
+  &.btn-warning {
+    --bs-btn-color: var(--angular-app-text-reverse-color);
+    --bs-btn-bg: var(--angular-app-warning-color);
+    --bs-btn-border-color: var(--angular-app-warning-color);
+    --bs-btn-hover-color: var(--angular-app-text-reverse-color);
+    --bs-btn-hover-bg: var(--angular-app-warning-color);
+    --bs-btn-hover-border-color: var(--angular-app-warning-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--angular-app-text-reverse-color);
+    --bs-btn-active-bg: var(--angular-app-warning-color);
+    --bs-btn-active-border-color: var(--angular-app-warning-color);
+    --bs-btn-active-shadow: var(--angular-app-active-shadow);
+    --bs-btn-disabled-color: var(--angular-app-text-reverse-color);
+    --bs-btn-disabled-bg: var(--angular-app-warning-color);
+    --bs-btn-disabled-border-color: var(--angular-app-warning-color);
+
+    &:hover {
+      backdrop-filter: blur(5px);
+      box-shadow: var(--angular-app-active-shadow);
+    }
+  }
+
+  &.btn-danger {
+    --bs-btn-color: var(--angular-app-text-reverse-color);
+    --bs-btn-bg: var(--angular-app-danger-color);
+    --bs-btn-border-color: var(--angular-app-danger-color);
+    --bs-btn-hover-color: var(--angular-app-text-reverse-color);
+    --bs-btn-hover-bg: var(--angular-app-danger-color);
+    --bs-btn-hover-border-color: var(--angular-app-danger-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--angular-app-text-reverse-color);
+    --bs-btn-active-bg: var(--angular-app-danger-color);
+    --bs-btn-active-border-color: var(--angular-app-danger-color);
+    --bs-btn-active-shadow: var(--angular-app-active-shadow);
+    --bs-btn-disabled-color: var(--angular-app-text-reverse-color);
+    --bs-btn-disabled-bg: var(--angular-app-danger-color);
+    --bs-btn-disabled-border-color: var(--angular-app-danger-color);
+
+    &:hover {
+      backdrop-filter: blur(5px);
+      box-shadow: var(--angular-app-active-shadow);
+    }
+  }
+
+  &.btn-outline-secondary {
+    --bs-btn-color: var(--angular-app-text-color);
+    --bs-btn-bg: var(--angular-app-bg-color);
+    --bs-btn-border-color: var(--angular-app-text-color);
+    --bs-btn-hover-color: var(--angular-app-primary-color);
+    --bs-btn-hover-bg: var(--angular-app-bg-color);
+    --bs-btn-hover-border-color: var(--angular-app-primary-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--angular-app-primary-color);
+    --bs-btn-active-bg: var(--angular-app-bg-color);
+    --bs-btn-active-border-color: var(--angular-app-text-color);
+    --bs-btn-active-shadow: var(--angular-app-active-shadow);
+    --bs-btn-disabled-color: var(--angular-app-bg-color);
+    --bs-btn-disabled-bg: var(--angular-app-gray-400-color);
+    --bs-btn-disabled-border-color: var(--angular-app-gray-400-color);
+  }
+
+  &.btn-outline-secondary {
+    &.btn-reverse {
+      --bs-btn-color: var(--angular-app-text-reverse-color);
+      --bs-btn-bg: var(--angular-app-bg-reverse-color);
+      --bs-btn-border-color: var(--angular-app-text-reverse-color);
+      --bs-btn-hover-color: var(--angular-app-primary-color);
+      --bs-btn-hover-bg: var(--angular-app-bg-reverse-color);
+      --bs-btn-hover-border-color: var(--angular-app-primary-color);
+      --bs-btn-focus-shadow-rgb: 49, 132, 253;
+      --bs-btn-active-color: var(--angular-app-primary-color);
+      --bs-btn-active-bg: var(--angular-app-bg-reverse-color);
+      --bs-btn-active-border-color: var(--angular-app-text-reverse-color);
+      --bs-btn-active-shadow: var(--angular-app-active-shadow);
+      --bs-btn-disabled-color: var(--angular-app-bg-reverse-color);
+      --bs-btn-disabled-bg: var(--angular-app-gray-400-color);
+      --bs-btn-disabled-border-color: var(--angular-app-gray-400-color);
+    }
+  }
+
+  &.btn-outline-primary {
+    --bs-btn-color: var(--angular-app-primary-color);
+    --bs-btn-bg: var(--angular-app-primary-color-highlight);
+    --bs-btn-border-color: var(--angular-app-primary-color);
+    --bs-btn-hover-color: var(--angular-app-primary-color);
+    --bs-btn-hover-bg: var(--angular-app-primary-color-rgb, 0.2);
+    --bs-btn-hover-border-color: var(--angular-app-primary-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--angular-app-primary-color);
+    --bs-btn-active-bg: var(--angular-app-primary-color-highlight);
+    --bs-btn-active-border-color: var(--angular-app-primary-color);
+    --bs-btn-active-shadow: var(--angular-app-active-shadow);
+    --bs-btn-disabled-color: var(--angular-app-text-reverse-color);
+    --bs-btn-disabled-bg: var(--angular-app-primary-color);
+    --bs-btn-disabled-border-color: var(--angular-app-primary-color);
+  }
+
+  &.btn-blur {
+    --bs-btn-bg: transparent;
+    --bs-btn-color: var(--angular-app-white-color);
+    --bs-btn-border-color: var(--angular-app-gray-400-color);
+    --bs-btn-hover-color: var(--angular-app-white-color);
+    --bs-btn-active-color: var(--angular-app-white-color);
+    backdrop-filter: blur(10px); /* Blur effect */
+
+    &.btn-blur-reverse {
+      --bs-btn-color: var(--angular-app-black-color);
+      --bs-btn-border-color: var(--angular-app-gray-400-color);
+    }
+  }
+}
+
+.btn-close {
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(var(--angular-app-primary-color-rgb), 0.25);
+  --bs-btn-close-bg: url("/assets/images/cross-primary.svg") !important;
+  --bs-btn-close-opacity: 1;
+}

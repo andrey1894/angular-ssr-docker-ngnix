@@ -1,0 +1,51 @@
+@mixin block-shadow {
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 0.2), 0 2px 2px 0 rgb(0 0 0 / 0.14), 0 1px 5px 0 rgb(0 0 0 / 0.12);
+}
+
+@mixin clearBlock($display: null) {
+  @if $display { display: $display; }
+  margin: 0;
+  padding: 0;
+  @content;
+}
+
+@mixin threeDots($width: 100%) {
+  @if $width {
+    width: $width;
+    max-width: $width;
+  }
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @content;
+}
+
+@mixin placeholder {
+  &::placeholder { @content; }
+}
+
+@mixin dotInfo($bg: var(--private-grey-light-font-color)) {
+  display: inline-block;
+  margin: auto;
+  min-width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: $bg;
+}
+
+@mixin rectangleInfo($bg: var(--private-warn-color)) {
+  display: inline-block;
+  margin: auto;
+  min-width: 0.5rem;
+  height: 0.3rem;
+  background-color: $bg;
+}
+
+@mixin blockquote() {
+  margin: 0;
+  padding: 0 1.5em;
+  font-style: italic;
+  overflow: hidden;
+  border-left: 0.31em solid var(--angular-app-blockquote-color);
+}

@@ -1,0 +1,26 @@
+.angular-app-icon-white {
+  fill: var(--angular-app-white-color);
+}
+
+.angular-app-icon-primary {
+  fill: var(--angular-app-primary-color);
+
+  & circle {
+    fill: none;
+    stroke: var(--angular-app-primary-color);
+  }
+}
+
+.angular-app-danger-color {
+  fill: var(--angular-app-danger-color);
+}
+
+.angular-app-icon-secondary-color {
+  fill: var(--angular-app-gray-400-color);
+}
+
+.bi-asterisk {
+  padding: 2px;
+  font-size: var(--font-size-7);
+  color: var(--angular-app-primary-color);
+}

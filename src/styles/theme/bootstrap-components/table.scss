@@ -1,0 +1,51 @@
+// TODO: Use Bootstrap table class
+
+table {
+  margin: 0;
+}
+
+tbody tr td {
+  padding: 1.125rem 1.5rem;
+
+  &:last-child {
+    width: 3.125rem
+  }
+}
+
+thead tr {
+  background-color: var(--angular-app-gray-color);
+
+}
+
+thead tr th {
+  padding: 0.6875rem 1.5rem;
+  border-top: 1px solid var(--angular-app-gray-300-color);
+  background-color: var(--angular-app-gray-100-color);
+}
+
+
+.table {
+  thead {
+    & tr {
+      align-items: center;
+      background-color: var(--angular-app-gray-100-color);
+    }
+
+    & th {
+      vertical-align: middle;
+      color: var(--angular-app-gray-color);
+      font-size: var(--font-size-11);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+  tbody {
+    & td {
+      color: var(--angular-app-black-color);
+      font-size: var(--font-size-14);
+    }
+  }
+}

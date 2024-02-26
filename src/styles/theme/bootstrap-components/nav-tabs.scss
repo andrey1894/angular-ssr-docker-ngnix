@@ -1,0 +1,18 @@
+.nav-tabs {
+  border-radius: 0;
+  padding: 0 1rem;
+}
+
+
+.nav-tabs .nav-item .nav-link.active {
+  border-bottom: 3px solid var(--angular-app-primary-color);
+  font-weight: 600;
+}
+
+.nav-tabs .nav-item .nav-link.inactive-link {
+  border-bottom: none;
+}
+
+.nav-tabs .inactive-link {
+  color: var(--angular-app-gray-color);
+}

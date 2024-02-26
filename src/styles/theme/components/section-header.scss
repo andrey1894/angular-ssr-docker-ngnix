@@ -1,0 +1,19 @@
+.section-header {
+  position: relative;
+  color: var(--angular-app-text-color);
+  text-align: center;
+  font-size: var(--font-size-36);
+  font-weight: 600;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    bottom: -12px;
+    display: block;
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--angular-app-primary-color);
+  }
+}

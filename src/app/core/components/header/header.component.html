@@ -1,0 +1,46 @@
+<header class="p-2 text-bg-dark">
+  <div class="container">
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+      >
+        <svg-icon
+          src="assets/angular-logo.svg"
+          [svgStyle]="{ 'width.rem': 10 }"
+        ></svg-icon>
+      </a>
+
+      <ul
+        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+      >
+        <li><a routerLink="/" class="nav-link px-2" routerLinkActive #rla="routerLinkActive" [class.text-secondary]="rla.isActive" [class.text-white]="!rla.isActive">Home</a></li>
+        <li>
+          <a routerLink="/test" class="nav-link px-2" routerLinkActive #rla1="routerLinkActive" [class.text-secondary]="rla1.isActive" [class.text-white]="!rla1.isActive">Features</a>
+        </li>
+        <li>
+          <a routerLink="/post" class="nav-link px-2" routerLinkActive #rla2="routerLinkActive" [class.text-secondary]="rla2.isActive" [class.text-white]="!rla2.isActive">Post</a>
+        </li>
+        <li><a routerLink="/test" class="nav-link px-2" routerLinkActive #rla3="routerLinkActive" [class.text-secondary]="rla3.isActive" [class.text-white]="!rla3.isActive">FAQs</a></li>
+        <li>
+          <a routerLink="/test" class="nav-link px-2" routerLinkActive #rla4="routerLinkActive" [class.text-secondary]="rla4.isActive" [class.text-white]="!rla4.isActive">About</a>
+        </li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input
+          type="search"
+          class="form-control form-control-dark text-bg-dark"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </form>
+
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-light me-2">Login</button>
+      </div>
+    </div>
+  </div>
+</header>

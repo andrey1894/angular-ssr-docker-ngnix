@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http'
+import { Injectable } from '@angular/core'
 
-import { IPost } from '../models';
+import { Observable } from 'rxjs'
+
+import { IPost } from '../models'
 
 @Injectable({ providedIn: 'root' })
 export class PostApiService {

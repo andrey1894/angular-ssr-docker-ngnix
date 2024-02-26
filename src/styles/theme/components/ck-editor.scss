@@ -6,6 +6,7 @@
 }
 /* stylelint-enable selector-class-pattern */
 
+/* stylelint-disable selector-type-no-unknown */
 ckeditor {
   .ck-content {
     blockquote {
@@ -39,3 +40,4 @@ ckeditor {
     }
   }
 }
+/* stylelint-enable selector-type-no-unknown */

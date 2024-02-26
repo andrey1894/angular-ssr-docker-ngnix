@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { SvgIconComponent } from 'angular-svg-icon';
+import { ChangeDetectionStrategy, Component } from '@angular/core'
+import { RouterLink, RouterLinkActive } from '@angular/router'
+
+import { TranslateModule } from '@ngx-translate/core'
+import { SvgIconComponent } from 'angular-svg-icon'
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, SvgIconComponent],
+  imports: [RouterLink, RouterLinkActive, TranslateModule, SvgIconComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TestComponent {}

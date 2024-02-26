@@ -113,9 +113,7 @@
     --bs-btn-disabled-color: var(--angular-app-bg-color);
     --bs-btn-disabled-bg: var(--angular-app-gray-400-color);
     --bs-btn-disabled-border-color: var(--angular-app-gray-400-color);
-  }
 
-  &.btn-outline-secondary {
     &.btn-reverse {
       --bs-btn-color: var(--angular-app-text-reverse-color);
       --bs-btn-bg: var(--angular-app-bg-reverse-color);

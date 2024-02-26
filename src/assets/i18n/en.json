@@ -1,0 +1,9 @@
+{
+  "appMenu": {
+    "home": "Home",
+    "features": "Features",
+    "post": "Post",
+    "faq": "FAQ",
+    "about": "About"
+  }
+}

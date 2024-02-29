@@ -58,3 +58,5 @@ dist
 
 # Angular
 .angular/cache
+
+auth.config.json

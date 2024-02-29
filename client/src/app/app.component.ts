@@ -7,6 +7,8 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap'
 import { SvgIconComponent } from 'angular-svg-icon'
 import { BehaviorSubject } from 'rxjs'
 
+import { ENV } from '~env/environment'
+
 import { TestApiService } from './core/api'
 import { TestComponent } from './core/components'
 
@@ -52,7 +54,7 @@ export class AppComponent implements OnInit {
     this.testRequest()
 
     this.lazyComponentSsr = import('./core/components/lazy-block/lazy-block.component').then(c => {
-      console.log('ngOnInit')
+      console.log('ngOnInit', ENV)
 
       return c.LazyBlockComponent
     })

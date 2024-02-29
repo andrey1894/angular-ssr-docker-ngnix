@@ -1,8 +1,8 @@
 import { makeStateKey, StateKey, TransferState } from '@angular/core'
 
 import { SvgLoader } from 'angular-svg-icon'
-import { readdirSync, readFileSync } from 'fs'
-import { join } from 'path'
+import { readdirSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { Observable, of } from 'rxjs'
 
 export class SvgServerLoader implements SvgLoader {

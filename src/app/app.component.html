@@ -1,5 +1,11 @@
 <app-header></app-header>
 
+<p class="text-primary">ERR: {{ err$ | async | json }}</p>
+<p class="text-primary">API: {{ testValue$ | async | json }}</p>
+<p class="text-primary">API: {{ testValue() | json }}</p>
+
+<button type="button" class="btn btn-primary" (click)="testRequest()">test api</button>
+
 <div class="container-fluid">
   <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
     <li [ngbNavItem]="1">

@@ -9,9 +9,17 @@ services:
       - '4000:4000'
     command: 'yarn serve:ssr:client'
 
+  api:
+    build: ./api
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./api:/app
+
   nginx:
     build: ./nginx
     ports:
       - '80:80'
     depends_on:
+      - api
       - angular-app

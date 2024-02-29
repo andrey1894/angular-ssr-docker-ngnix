@@ -1,29 +1,28 @@
+import { HttpClient } from '@angular/common/http'
 import { ApplicationConfig, importProvidersFrom, mergeApplicationConfig, TransferState } from '@angular/core'
-import { provideServerRendering } from '@angular/platform-server'
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { provideAngularSvgIcon, SvgLoader } from 'angular-svg-icon'
 
 import { appConfig } from './app.config'
-import { SvgServerLoader } from './svg-server-loader.class'
-import { TranslateServerLoader } from './translate-server-loader.class'
+import { SvgBrowserLoader } from './svg-browser-loader.class'
+import { TranslateBrowserLoader } from './translate-browser-loader.class'
 
-const svgLoaderFactory = (transferState: TransferState): SvgServerLoader => {
-  return new SvgServerLoader('src', transferState)
+const svgLoaderFactory = (http: HttpClient, transferState: TransferState): SvgBrowserLoader => {
+  return new SvgBrowserLoader(http, transferState)
 }
 
-const translateLoaderFactory = (): TranslateServerLoader => {
-  return new TranslateServerLoader('src', './assets/i18n/', '.json')
+const translateLoaderFactory = (http: HttpClient): TranslateBrowserLoader => {
+  return new TranslateBrowserLoader(http, './assets/i18n/', '.json')
 }
 
-const serverConfig: ApplicationConfig = {
+const clientConfig: ApplicationConfig = {
   providers: [
-    provideServerRendering(),
     provideAngularSvgIcon({
       loader: {
         provide: SvgLoader,
         useFactory: svgLoaderFactory,
-        deps: [TransferState],
+        deps: [HttpClient, TransferState],
       },
     }),
     importProvidersFrom(
@@ -32,7 +31,7 @@ const serverConfig: ApplicationConfig = {
         loader: {
           provide: TranslateLoader,
           useFactory: translateLoaderFactory,
-          deps: [],
+          deps: [HttpClient],
         },
         useDefaultLang: true,
       })
@@ -40,4 +39,4 @@ const serverConfig: ApplicationConfig = {
   ],
 }
 
-export const config = mergeApplicationConfig(appConfig, serverConfig)
+export const config = mergeApplicationConfig(appConfig, clientConfig)

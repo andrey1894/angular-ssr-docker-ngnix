@@ -1,4 +1,4 @@
-import { DatePipe } from '@angular/common'
+import { DatePipe, NgOptimizedImage } from '@angular/common'
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core'
 import { Meta, Title } from '@angular/platform-browser'
 import { RouterOutlet } from '@angular/router'
@@ -11,7 +11,7 @@ import { SvgIconComponent } from 'angular-svg-icon'
   styleUrl: './test.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [RouterOutlet, DatePipe, SvgIconComponent],
+  imports: [RouterOutlet, NgOptimizedImage, DatePipe, SvgIconComponent],
 })
 export class TestComponent implements OnInit {
   date = new Date()

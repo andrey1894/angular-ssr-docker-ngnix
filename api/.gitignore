@@ -1,0 +1,37 @@
+# Application
+.env
+logs
+
+# Buiild artifacts
+server/web/static/dist/*
+
+# Python artifacts
+__pycache__
+.pytest_cache
+venv
+.venv
+
+# Pycharm
+.idea
+
+# VSCode
+.vscode
+.vs
+.devcontainer
+/client/debug.log
+.devcontainer
+
+# Git
+!.gitkeep
+
+# dependencies
+/client/node_modules
+
+# compiled output
+/client/dist
+/client/tmp
+/client/out-tsc
+/client/test-results.xml
+
+app.db
+client/.angular/

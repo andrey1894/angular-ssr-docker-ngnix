@@ -15,6 +15,7 @@ export const appConfig: ApplicationConfig = {
     provideAnimations(),
     provideClientHydration(),
     { provide: HTTP_INTERCEPTORS, useClass: BaseApiInterceptor, multi: true },
+
     importProvidersFrom(
       // AppStoreModule,
       ...NGRX_DEBUG_MODULES

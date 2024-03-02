@@ -1,8 +1,11 @@
 import { HttpClient } from '@angular/common/http'
 import { ApplicationConfig, importProvidersFrom, mergeApplicationConfig, TransferState } from '@angular/core'
 
+import { AuthModule } from '@auth0/auth0-angular'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { provideAngularSvgIcon, SvgLoader } from 'angular-svg-icon'
+
+import { ENV } from '~env/environment'
 
 import { appConfig } from './app.config'
 import { SvgBrowserLoader } from './svg-browser-loader.class'
@@ -34,6 +37,13 @@ const clientConfig: ApplicationConfig = {
           deps: [HttpClient],
         },
         useDefaultLang: true,
+      }),
+      AuthModule.forRoot({
+        ...ENV.auth,
+        // responseType: 'id_token',
+        httpInterceptor: {
+          ...ENV.httpInterceptor,
+        },
       })
     ),
   ],

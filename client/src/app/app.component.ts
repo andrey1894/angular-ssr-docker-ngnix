@@ -1,11 +1,12 @@
 import { AsyncPipe, JsonPipe, NgComponentOutlet } from '@angular/common'
-import { afterNextRender, ChangeDetectionStrategy, Component, OnInit } from '@angular/core'
+import { afterNextRender, ChangeDetectionStrategy, Component, OnInit, Optional } from '@angular/core'
 import { toSignal } from '@angular/core/rxjs-interop'
 import { RouterLink, RouterOutlet } from '@angular/router'
 
+import { AuthService } from '@auth0/auth0-angular'
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap'
 import { SvgIconComponent } from 'angular-svg-icon'
-import { BehaviorSubject } from 'rxjs'
+import { BehaviorSubject, of } from 'rxjs'
 
 import { ENV } from '~env/environment'
 
@@ -40,7 +41,12 @@ export class AppComponent implements OnInit {
   testValue$ = new BehaviorSubject<object | null>(null)
   err$ = new BehaviorSubject<any>(null)
 
-  constructor(private testApiService: TestApiService) {
+  user = toSignal(this.authService?.user$ || of())
+
+  constructor(
+    private testApiService: TestApiService,
+    @Optional() private authService: AuthService | null
+  ) {
     afterNextRender(() => {
       this.lazyComponentClient = import('./core/components/lazy-block/lazy-block.component').then(c => {
         console.log('afterNextRender')

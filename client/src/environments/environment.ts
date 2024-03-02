@@ -25,8 +25,8 @@ const auth: AuthConfig = {
   cacheLocation: 'localstorage',
   authorizationParams: {
     audience,
-    // redirectUri: 'window.location.origin',
-    // redirect_uri: 'window.location.origin',
+    redirectUri: 'http://localhost:4200',
+    redirect_uri: 'http://localhost:4200',
   },
 }
 

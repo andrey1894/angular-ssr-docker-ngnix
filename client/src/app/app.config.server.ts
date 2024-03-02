@@ -1,6 +1,7 @@
 import { ApplicationConfig, importProvidersFrom, mergeApplicationConfig, TransferState } from '@angular/core'
 import { provideServerRendering } from '@angular/platform-server'
 
+import { AuthGuard, AuthService } from '@auth0/auth0-angular'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { provideAngularSvgIcon, SvgLoader } from 'angular-svg-icon'
 
@@ -26,6 +27,8 @@ const serverConfig: ApplicationConfig = {
         deps: [TransferState],
       },
     }),
+    { provide: AuthService, useValue: null },
+    { provide: AuthGuard, useValue: null },
     importProvidersFrom(
       TranslateModule.forRoot({
         defaultLanguage: 'en',
